@@ -1,0 +1,8 @@
+.header {
+    @apply h-14 flex justify-between items-center bg-white;
+    z-index: 1000;
+    position: sticky ;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
