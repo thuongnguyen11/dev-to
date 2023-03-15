@@ -39,7 +39,7 @@ function ArticleItem({ article }) {
                     </div>
 
                     <div className="flex ">
-                        <div className="pr-3 text-sm">2 min read</div>
+                        <div className="pr-3 text-sm">{article.reading_time_minutes} min read</div>
                         <BookmarkBorderOutlinedIcon />
 
                     </div>

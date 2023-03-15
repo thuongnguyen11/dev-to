@@ -1,21 +1,23 @@
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
+import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 
-
-function ReactionsCount() {
+function ReactionsCount({articleInformation}) {
     return (
         <div>
-            <div className="">
+            <div className="flex">
                 <FavoriteBorderIcon />
-                <div className="text-sm">{article.public_reactions_count}</div>
+                <div className="text-sm">{articleInformation.public_reactions_count}</div>
             </div>
 
-            <div className="">
+            <div className="flex">
                 <ChatBubbleOutlineOutlinedIcon />
-                <div className="text-sm">{article.comments_count}</div>
+                <div className="text-sm">{articleInformation.comments_count}</div>
             </div>
 
-            <div className="">
+            <div className="flex">
                 <BookmarkBorderOutlinedIcon />
-
+                <div className="text-sm">{articleInformation.comments_count}</div>
             </div>
         </div>
     )
